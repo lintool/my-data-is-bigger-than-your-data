@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Providing Relevant and Timely Results: Real-Time Search Architectures and Relevance Algorithms</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <header>
+
+<!--
+<p style="padding-top: 150px">
+<a href="#top">Top</a><br/>
+<a href="#2014">2014</a><br/>
+<a href="#2013">2013</a><br/>
+-->
+
+      </header>
+      <section>
+
+<h1>My data is bigger than your big data!</h1>
+
+<!--
+<iframe width="420" height="315" src="http://www.youtube.com/embed/jTmXHvGZiSY" frameborder="0" allowfullscreen></iframe>
+-->
+
+<h3 style="padding-top: 10px">Google's Bigdata at HBaseCon2014 (May 2014)</h3>
+
+<p>Bigtable scale numbers from keynote talk at <a href="http://hbasecon.com/agenda/">HBaseCon2014</a> by Carter Page:
+
+<p><blockquote class="twitter-tweet" lang="en"><p>Correction: BigTable at Google serves 2+ exabytes at 600M QPS organization wide. That&#39;s a scale quite challenging to conceptualize. Wow.</p>&mdash; Andrew Purtell (@akpurtell) <a href="https://twitter.com/akpurtell/statuses/463747917782589441">May 6, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<p>More <a href="http://seen.co/event/hbasecon-2014-san-francisco-ca-2014-9905/highlight/35873">HBaseCon2014 highlights</a>.</p>
+
+
+<h3 style="padding-top: 10px">eBay (April 2014)</h3>
+
+<p><blockquote class="twitter-tweet" lang="en"><p>EBay&#39;s scaling of their Hadoop clusters is impressive. <a href="http://t.co/SVNf42LAMI">pic.twitter.com/SVNf42LAMI</a></p>&mdash; Owen O&#39;Malley (@owen_omalley) <a href="https://twitter.com/owen_omalley/statuses/451686067490410497">April 3, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<h3 style="padding-top: 10px">Hive at Facebook (April 2014)</h3>
+
+<p>Our warehouse stores upwards of 300 PB of Hive data, with an incoming daily rate of about 600 TB.</p>
+
+<p>Source: <a href="https://code.facebook.com/posts/229861827208629/scaling-the-facebook-data-warehouse-to-300-pb/">Facebook Engineering Blog</a></p>
+
+<h3 style="padding-top: 10px">Kafka at LinkedIn (April 2014)</h3>
+
+<p><blockquote class="twitter-tweet" lang="en"><p>Kafka metrics @ LinkedIN 300 Brokers, 18000 topics, 220 Billions messages per day... impressive! <a href="https://twitter.com/search?q=%23apachecon&amp;src=hash">#apachecon</a></p>&mdash; Ronan GUILLAMET (@_Spiff_) <a href="https://twitter.com/_Spiff_/statuses/453297030073307136">April 7, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<h3 style="padding-top: 10px">Internet Archive (February 2014)</h3>
+
+<p><blockquote class="twitter-tweet" lang="en"><p>Wayback Machine updated, now 397,144,266,000 web objects in it, (html, jpg, css). Getting close to 400Billion. <a href="https://twitter.com/internetarchive">@internetarchive</a></p>&mdash; Brewster Kahle (@brewster_kahle) <a href="https://twitter.com/brewster_kahle/statuses/439414396108800000">February 28, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<h3 style="padding-top: 10px">NSA's datacenter (Summer 2013)</h3>
+
+<ul>
+<li><a href="http://www.forbes.com/sites/kashmirhill/2013/07/24/blueprints-of-nsa-data-center-in-utah-suggest-its-storage-capacity-is-less-impressive-than-thought/">Blueprints Of NSA's Ridiculously Expensive Data Center In Utah Suggest It Holds Less Info Than Thought</a></li>
+<li><a href="http://www.wired.com/threatlevel/2012/03/ff_nsadatacenter/all/1">The NSA Is Building the Country's Biggest Spy Center (Watch What You Say)</a></li>
+<li><a href="http://luxexumbra.blogspot.ca/2013/08/capacity-of-utah-data-center.html"</a>Capacity of the Utah Data Center</a></li>
+</ul>
+
+<h3 style="padding-top: 10px">Amazon S3 (April 2013)</h3>
+
+<p>There are now more than 2 trillion objects stored in Amazon S3 and that the service is regularly peaking at over 1.1 million requests per second.</p>
+
+<p>Source: <a href="http://aws.typepad.com/aws/2013/04/amazon-s3-two-trillion-objects-11-million-requests-second.html">Amazon Web Services Blog</a></p>
+
+<h3 style="padding-top: 10px">Hadoop at Yahoo! (February 2013)</h3>
+
+<p>Around ~45k hadoop nodes, ~350 PB total</p>
+
+<img src="images/hadoopatyahoo.png"/>
+
+<p>Source: <a href="http://developer.yahoo.com/blogs/ydn/posts/2013/02/hadoop-at-yahoo-more-than-ever-before/">YDN Blog</a></p>
+
+<h3 style="padding-top: 10px">Internet Archive reaches 10 PB (October 2012)</h3>
+
+<p><a href="http://blog.archive.org/2012/10/10/the-ten-petabyte-party/">Blog post</a> about the Internet Archive's 10 PB party.</p>
+
+<p><blockquote class="twitter-tweet" lang="en"><p>10,000,000,000,000,000 Bytes Archived! <a href="https://twitter.com/internetarchive">@internetarchive</a> go open content movement <a href="http://t.co/UDO1Vpwd">http://t.co/UDO1Vpwd</a></p>&mdash; Brewster Kahle (@brewster_kahle) <a href="https://twitter.com/brewster_kahle/statuses/261864516202156032">October 26, 2012</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<p><blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/search?q=%23WaybackMachine&amp;src=hash">#WaybackMachine</a> updated with 240 billion pages! Go <a href="https://twitter.com/internetarchive">@internetarchive</a> ! 5PB be <a href="https://twitter.com/search?q=%23BigData&amp;src=hash">#BigData</a> <a href="http://t.co/vrAq9NL3">http://t.co/vrAq9NL3</a></p>&mdash; Brewster Kahle (@brewster_kahle) <a href="https://twitter.com/brewster_kahle/statuses/289418815094284288">January 10, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<p>Source: <a href="http://blog.archive.org/2013/01/09/updated-wayback/">Internet Archive</a></p>
+
+<h3 style="padding-top: 10px">Google at SES San Francisco (August 2012)</h3>
+
+<p>Google has seen more than 30 trillion URLs and crawls 20 billion pages
+a day. One hundred billion searches are conducted each month on Google
+(3 billion a day).</p>
+
+<p>Source: <a href="http://searchenginewatch.com/article/2199092/Spotlight-Keynote-With-Matt-Cutts-SESSF">Spotlight Keynote With Matt Cutts #SESSF (from Google)</a></p>
+
+<h3 style="padding-top: 10px">Cassandra at eBay</h3>
+
+http://www.slideshare.net/jaykumarpatel/cassandra-at-ebay-13920376
+
+<h3 style="padding-top: 10px">The size, scale, and numbers of eBay.com (June 2012)</h3>
+
+http://hughewilliams.com/2012/06/26/the-size-scale-and-numbers-of-ebay-com/
+
+- 10PB in Hadoop and Teradata
+- 75B DB calls = ~870k QPS
+
+
+<h3 style="padding-top: 10px">Six Super-Scale Hadoop Deployments (April 2012)</h3>
+
+http://www.datanami.com/datanami/2012-04-26/six_super-scale_hadoop_deployments.html?page=1
+
+---
+
+<h3 style="padding-top: 10px">Ranking at eBay</h3>
+
+http://hughewilliams.com/2012/04/19/ranking-at-ebay-part-1/
+
+
+
+<h3 style="padding-top: 10px">Amazon S3 Cloud Storage Hosts 1 Trillion Objects (June 2012)</h3>
+
+<p>Late last week the number of objects stored in Amazon S3 reached one trillion.</p>
+
+<p>Source: <a href="http://aws.typepad.com/aws/2012/06/amazon-s3-the-first-trillion-objects.html">Amazon Web Services Blog</a></p>
+
+
+<h3 style="padding-top: 10px">Hadoop at Facebook (July 2011)</h3>
+
+<p>In 2010, Facebook had the largest Hadoop cluster in the world, with over 20 PB of storage. By March 2011, the cluster had grown to 30 PB.</p>
+
+<p>Source: <a href="http://www.facebook.com/notes/paul-yang/moving-an-elephant-large-scale-hadoop-data-migration-at-facebook/10150246275318920">Facebook Engineering Blog</a></p>
+
+<h3 style="padding-top: 10px">Pinterest Architecture Update</h3>
+
+ - 18 Million Visitors, 10x Growth,12 Employees, 410 TB Of Data
+http://highscalability.com/blog/2012/5/21/pinterest-architecture-update-18-million-visitors-10x-growth.html
+
+
+<h3 style="padding-top: 10px">Modern HTTP Servers Are Fast</h3>
+
+<p>A modern HTTP server (nginx 1.0.14) running on somewhat recent hardware (dual Intel Xeon X5670, 6 cores at 2.93 GHz, with 24GB of RAM) is capable of servicing 500,000 Requests/Sec.</p>
+
+<p>Source: <a href="http://lowlatencyweb.wordpress.com/2012/03/20/500000-requestssec-modern-http-servers-are-fast/">The Low Latency Web</a></p>
+
+
+<h3 style="padding-top: 10px">DataSift Architecture: Realtime Datamining At 120,000 Tweets Per Second</h3>
+
+http://highscalability.com/blog/2011/11/29/datasift-architecture-realtime-datamining-at-120000-tweets-p.html
+
+Tumblr Architecture - 15 Billion Page Views A Month And Harder To Scale Than Twitter
+http://highscalability.com/blog/2012/2/13/tumblr-architecture-15-billion-page-views-a-month-and-harder.html
+
+<h3 style="padding-top: 10px">Hive at Facebook (May 2009)</h3>
+
+<ul>
+<li>Facebook has 400 terabytes of disk 	managed by Hadoop/Hive, with a slightly better than 6:1 overall 	compression ratio. So the 2 1/2 petabytes figure for user 	data is reasonable.</li>
+<li>Facebook&#8217;s Hadoop/Hive system 	ingests 15 terabytes of new data per day now, not 10.</li>
+<li>Hadoop/Hive cycle times aren&#8217;t as 	fast as I thought I heard from Jeff.  Ad targeting queries are the 	most frequent, and they&#8217;re run hourly. Dashboards are 	repopulated daily.</li>
+</ul>
+<p>In a new-to-me metric, Facebook has 610 Hadoop nodes, running in a single cluster, due to be increased to 1000 soon.</p>
+
+<p>Source: <a href="http://www.dbms2.com/2009/05/11/facebook-hadoop-and-hive/">DBMS2</a></p>
+
+<h3 style="padding-top: 10px">Datawarehouses at eBay (April 2009)</h3>
+
+<p style="margin-bottom: 0in;">Metrics on eBay&#8217;s main Teradata data warehouse include:</p>
+<ul>
+<li>&gt;2 petabytes of user data</li>
+<li>10s of 1000s of users</li>
+<li>Millions of queries per day</li>
+<li>72 nodes</li>
+<li>&gt;140 GB/sec of I/O, or 2 	GB/node/sec, or maybe that&#8217;s a peak when the workload is 	scan-heavy</li>
+<li>100s of production databases being 	fed in</li>
+</ul>
+<p style="margin-bottom: 0in;">Metrics on eBay&#8217;s Greenplum data warehouse (or, if you like, data mart) include:</p>
+<ul>
+<li>6  1/2 petabytes of user data</li>
+<li>17 trillion records</li>
+<li>150 billion new records/day, <span>which seems to suggest an 	ingest rate well over </span>50 terabytes/day</li>
+<li>96 nodes</li>
+<li>200 MB/node/sec of I/O 	(that&#8217;s the order of magnitude difference that triggered my post on 	disk drives)</li>
+<li>4.5 petabytes of storage</li>
+<li>70% compression</li>
+<li>A small number of concurrent users</li>
+</ul>
+
+<p>Source: <a href="http://www.dbms2.com/2009/04/30/ebays-two-enormous-data-warehouses/">DBMS2</a></p>
+
+
+<h3 style="padding-top: 10px">Visa Credit Card Transactions (2007)</h3>
+
+<p>According to the Visa website, they processed 27.612 billion
+transactions in 2007. This means an average of 875 credit transactions
+per second based on a uniform distribution. Assuming that 80% of
+transactions occur in the 8 hours of the day, this gives an event rate
+of 2100 transactions per second.</p>
+
+<p>Source: <a href="http://www.doc.ic.ac.uk/~migliava/papers/09-debs-next.pdf">Schultz-Møller et al. (2009)</a>
+
+</section>
+      <footer>
+
+        <p><small>Theme based on <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="js/scale.fix.js"></script>
+  </body>
+</html>
