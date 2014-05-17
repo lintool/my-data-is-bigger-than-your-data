@@ -16,20 +16,15 @@
   </head>
   <body>
 
+<a href="https://github.com/lintool/my-data-is-bigger-than-your-data/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
     <div class="wrapper">
       <header>
-
-<!--
-<p style="padding-top: 150px">
-<a href="#top">Top</a><br/>
-<a href="#2014">2014</a><br/>
-<a href="#2013">2013</a><br/>
--->
 
       </header>
       <section>
 
-<h1>My data is bigger than your big data!</h1>
+<h1>My data is bigger than your data!</h1>
 
 <!--
 <iframe width="420" height="315" src="http://www.youtube.com/embed/jTmXHvGZiSY" frameborder="0" allowfullscreen></iframe>
@@ -108,29 +103,41 @@ a day. One hundred billion searches are conducted each month on Google
 
 <p>Source: <a href="http://searchenginewatch.com/article/2199092/Spotlight-Keynote-With-Matt-Cutts-SESSF">Spotlight Keynote With Matt Cutts #SESSF (from Google)</a></p>
 
-<h3 style="padding-top: 10px">Cassandra at eBay</h3>
+<h3 style="padding-top: 10px">Cassandra at eBay (August 2012)</h3>
 
-http://www.slideshare.net/jaykumarpatel/cassandra-at-ebay-13920376
+<p style="margin-bottom: 0in;">eBay Marketplaces:</p>
+<ul>
+<li>97 million active buyers and sellers </li>
+<li>200+ million items </li>
+<li>2 billion page views each day </li>
+<li>80 billion database calls each day </li>
+<li>5+ petabytes of site storage capacity </li>
+<li>80+ petabytes of analytics storage capacity</li>
+</ul>
+
+<p style="margin-bottom: 0in;">A glimpse on our Cassandra deployment:</p>
+<ul>
+<li>Dozens of nodes across multiple clusters </li>
+<li>200 TB+ storage provisioned </li>
+<li>400M+ writes & 100M+ reads per day, and growing </li>
+<li>QA, LnP, and multiple Production clusters</li>
+</ul>
+
+<p>Source: <a href="http://www.slideshare.net/jaykumarpatel/cassandra-at-ebay-13920376">Slideshare</a> [<a href="data/cassandraatebay-120809022318-phpapp01.pdf">local copy</a>]</p>
 
 <h3 style="padding-top: 10px">The size, scale, and numbers of eBay.com (June 2012)</h3>
 
-http://hughewilliams.com/2012/06/26/the-size-scale-and-numbers-of-ebay-com/
+<ul>
+<li>We have over 10 petabytes of data stored in our <a href="http://hadoop.apache.org">Hadoop</a> and <a href="http://teradata.com">Teradata</a> clusters. Hadoop is primarily used by engineers who use data to build products, and Teradata is primarily used by our finance team to understand our business</li>
+<li>We have over 300 million items for sale, and over a billion accessible at any time (including, for example, items that are no longer for sale but that are used by customers for price research)</li>
+<li>We process around 250 million user queries per day (which become many billions of queries behind the scenes – <a href="http://hughewilliams.com/2012/03/19/query-rewriting-in-search-engines/">query rewriting</a> implies many calls to search to provide results for a single user query, and many other parts of our system use search for various reasons)</li>
+<li>We serve over 2 billion pages to customers every day</li>
+<li>We have over 100 million active users</li>
+<li>We sold over US$68 billion in merchandize in 2011</li>
+<li>We make over 75 billion database calls each day (our database tables are denormalized because doing relational joins at our scale is often too slow – and so we precompute and store the results, leading to many more queries that take much less time each)</li>
+</ul>
 
-- 10PB in Hadoop and Teradata
-- 75B DB calls = ~870k QPS
-
-
-<h3 style="padding-top: 10px">Six Super-Scale Hadoop Deployments (April 2012)</h3>
-
-http://www.datanami.com/datanami/2012-04-26/six_super-scale_hadoop_deployments.html?page=1
-
----
-
-<h3 style="padding-top: 10px">Ranking at eBay</h3>
-
-http://hughewilliams.com/2012/04/19/ranking-at-ebay-part-1/
-
-
+<p>Source: <a href="http://hughewilliams.com/2012/06/26/the-size-scale-and-numbers-of-ebay-com/">Hugh Williams Blog Post</a></p>
 
 <h3 style="padding-top: 10px">Amazon S3 Cloud Storage Hosts 1 Trillion Objects (June 2012)</h3>
 
@@ -138,6 +145,51 @@ http://hughewilliams.com/2012/04/19/ranking-at-ebay-part-1/
 
 <p>Source: <a href="http://aws.typepad.com/aws/2012/06/amazon-s3-the-first-trillion-objects.html">Amazon Web Services Blog</a></p>
 
+<h3 style="padding-top: 10px">Pinterest Architecture Update (May 2012)</h3>
+
+<p>18 Million Visitors, 10x Growth, 12 Employees, 410 TB Of Data.</p>
+
+<p>80 million objects stored in S3 with 410 terabytes of user data, 10x what they had in August. EC2 instances have grown by 3x.  Around $39K fo S3 and $30K for EC2.</p>
+
+<p>Source: <a href="http://highscalability.com/blog/2012/5/21/pinterest-architecture-update-18-million-visitors-10x-growth.html">High Scalability Blog Post</a></p>
+
+<h3 style="padding-top: 10px">Six Super-Scale Hadoop Deployments (April 2012)</h3>
+
+<p>Source: <a href="http://www.datanami.com/datanami/2012-04-26/six_super-scale_hadoop_deployments.html?page=1">Datanami</a></a></p>
+
+
+<h3 style="padding-top: 10px">Ranking at eBay (April 2012)</h3>
+
+<p>eBay is amazingly dynamic. Around 10% of the 300+ million items for sale end each day (sell or end unsold), and a new 10% is listed. A large fraction of items have updates: they get bids, prices change, sellers revise descriptions, buyers watch, buyers offer, buyers ask questions, and so on. We process tens of millions of change events on items in a typical day, that is, our search engine receives that many signals that something important has changed about an item that should be used in the search ranking process. And all that is happening while we process around 250 million queries on a typical day.</p>
+
+<p>Source: <a href="http://hughewilliams.com/2012/04/19/ranking-at-ebay-part-1/">Hugh Williams Blog Post</a></p>
+
+
+<h3 style="padding-top: 10px">Modern HTTP Servers Are Fast (March 2012)</h3>
+
+<p>A modern HTTP server (nginx 1.0.14) running on somewhat recent hardware (dual Intel Xeon X5670, 6 cores at 2.93 GHz, with 24GB of RAM) is capable of servicing 500,000 Requests/Sec.</p>
+
+<p>Source: <a href="http://lowlatencyweb.wordpress.com/2012/03/20/500000-requestssec-modern-http-servers-are-fast/">The Low Latency Web</a></p>
+
+<h3 style="padding-top: 10px">Tumblr Architecture (February 2012)</h3>
+
+<p>15 Billion Page Views A Month And Harder To Scale Than Twitter:  500 million page views a day, a peak rate of ~40k requests per second, ~3TB of new data to store a day, all running on 1000+ servers.</p>
+
+<p>Source: <a href="http://highscalability.com/blog/2012/2/13/tumblr-architecture-15-billion-page-views-a-month-and-harder.html">High Scalability Blog Post</a></p>
+
+<h3 style="padding-top: 10px">DataSift Architecture (November 2011)</h3>
+
+<ul>
+<li>936 CPU Cores</li>
+<li>Current Peak Delivery of 120,000 Tweets Per Second (260Mbit bandwidth) </i>
+<li>Performs 250+ million sentiment analysis with sub 100ms latency </li>
+<li>1TB of augmented (includes gender, sentiment, etc) data transits the platform daily</li>
+<li>Data Filtering Nodes Can process up to 10,000 unique streams (with peaks of 8000+ tweets running through them per second) </li>
+<li>Can do data-lookup's on 10,000,000+ username lists in real-time </li>
+<li>Links Augmentation Performs 27 million link resolves + lookups plus 15+ million full web page aggregations per day.</li>
+</ul>
+
+<p>Source: <a href="http://highscalability.com/blog/2011/11/29/datasift-architecture-realtime-datamining-at-120000-tweets-p.html">High Scalability Blog Post</a></p>
 
 <h3 style="padding-top: 10px">Hadoop at Facebook (July 2011)</h3>
 
@@ -145,26 +197,7 @@ http://hughewilliams.com/2012/04/19/ranking-at-ebay-part-1/
 
 <p>Source: <a href="http://www.facebook.com/notes/paul-yang/moving-an-elephant-large-scale-hadoop-data-migration-at-facebook/10150246275318920">Facebook Engineering Blog</a></p>
 
-<h3 style="padding-top: 10px">Pinterest Architecture Update</h3>
-
- - 18 Million Visitors, 10x Growth,12 Employees, 410 TB Of Data
-http://highscalability.com/blog/2012/5/21/pinterest-architecture-update-18-million-visitors-10x-growth.html
-
-
-<h3 style="padding-top: 10px">Modern HTTP Servers Are Fast</h3>
-
-<p>A modern HTTP server (nginx 1.0.14) running on somewhat recent hardware (dual Intel Xeon X5670, 6 cores at 2.93 GHz, with 24GB of RAM) is capable of servicing 500,000 Requests/Sec.</p>
-
-<p>Source: <a href="http://lowlatencyweb.wordpress.com/2012/03/20/500000-requestssec-modern-http-servers-are-fast/">The Low Latency Web</a></p>
-
-
-<h3 style="padding-top: 10px">DataSift Architecture: Realtime Datamining At 120,000 Tweets Per Second</h3>
-
-http://highscalability.com/blog/2011/11/29/datasift-architecture-realtime-datamining-at-120000-tweets-p.html
-
-Tumblr Architecture - 15 Billion Page Views A Month And Harder To Scale Than Twitter
-http://highscalability.com/blog/2012/2/13/tumblr-architecture-15-billion-page-views-a-month-and-harder.html
-
+`
 <h3 style="padding-top: 10px">Hive at Facebook (May 2009)</h3>
 
 <ul>
