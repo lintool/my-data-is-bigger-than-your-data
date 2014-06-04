@@ -30,6 +30,31 @@
 
 <p>Without further adieu, here's "big" data, in reverse chronological order...</p>
 
+<h3 style="padding-top: 10px">DataTorrent at the Hadoop Summit (June 2014)</h3>
+
+<p>[David] Hornik [of August Capital] was also an early stage investor in Splunk, and he sees lots of potential here for DataTorrent. “When you can process a billion data points in a second, there are a lot of possibilities.”</p>
+
+<p>Source: <a href="http://techcrunch.com/2014/06/03/datatorrent-big-data-processing-platform-built-on-hadoop-can-process-a-billion-events-per-second/">TechCrunch</a></p>
+
+<p>What would you do with a system that could process 1.5 billion events per second? That’s the mind-boggling rate at which DataTorrent’s Real-Time Streaming (RTS) offering for Hadoop was recently benchmarked. Now that RTS is generally available–DataTorrent announced its general availability today at Hadoop Summit in San Jose–we may soon find out.<p>
+
+<p>That 1.5-billion-events-per-second figure was recorded on DataTorrent’s internal Hadoop cluster, which sports 34 nodes. Each node is able to process tens of thousands of incoming events (call data records, machine data, and clickstream data are common targets) per second, and in turn generates hundreds of thousands of secondary events that are then processed again using one of the 400 operators that DataTorrent makes available as part of its in-memory, big-data kit.</p>
+
+<p>Source: <a href="http://www.datanami.com/2014/06/03/datatorrent-rts-clocks-1-5b-events-per-second/">Datanami</a></p>
+
+<h3 style="padding-top: 10px">Yahoo! and the Hadoop Summit (June 2014)</h3>
+
+<blockquote class="twitter-tweet" lang="en"><p>Wondering how big Hadoop clusters get? Yahoo is approaching 500 PB <a href="https://twitter.com/search?q=%23hadoopsummit&amp;src=hash">#hadoopsummit</a> <a href="https://twitter.com/search?q=%23bigdatap&amp;src=hash">#bigdatap</a> <a href="http://t.co/osNZrZR5ir">http://t.co/osNZrZR5ir</a></p>&mdash; richardwinter (@richardwinter) <a href="https://twitter.com/richardwinter/statuses/473911597434667009">June 3, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>[<a href="images/2014-06-03-Yahoo.jpg">local cached copy</a>]</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>oh thoseYyahoo stats, like 365 PB storage, 330k YARN nodes, ~4- 6 YARN jobs per second <a href="https://twitter.com/search?q=%23HadoopSummit&amp;src=hash">#HadoopSummit</a> <a href="https://twitter.com/search?q=%23bigdata&amp;src=hash">#bigdata</a> term sounds almost quaint</p>&mdash; Tony Baer (@TonyBaer) <a href="https://twitter.com/TonyBaer/statuses/349943270119452672">June 26, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/search?q=%23Hadoop&amp;src=hash">#Hadoop</a> at Yahoo - 365+ PB of HDFS storage, 30,000 nodes, 400,000 jobs per day, 10 million hours per day <a href="https://twitter.com/search?q=%23hadoopsummit&amp;src=hash">#hadoopsummit</a></p>&mdash; Jeff Kelly (@jeffreyfkelly) <a href="https://twitter.com/jeffreyfkelly/statuses/349943221117403136">June 26, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <h3 style="padding-top: 10px">Snapchat (May 2014)</h3>
 
 <p>Snapchat claims that over 700 million snaps are shared per day on the service, which could make it the most-used photo-sharing app in the world — ahead of Facebook, WhatsApp, and others. Even Snapchat’s Stories feature seems to be doing well, amassing 500 million views per day.</p>
@@ -87,6 +112,13 @@
 <p><blockquote class="twitter-tweet" lang="en"><p>Wayback Machine updated, now 397,144,266,000 web objects in it, (html, jpg, css). Getting close to 400Billion. <a href="https://twitter.com/internetarchive">@internetarchive</a></p>&mdash; Brewster Kahle (@brewster_kahle) <a href="https://twitter.com/brewster_kahle/statuses/439414396108800000">February 28, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 
+<h3 style="padding-top: 10px">Google's BigTable (September 2013)</h3>
+
+<blockquote class="twitter-tweet" lang="en"><p>Jeff Dean at XLDB: Largest Google Bigtable cluster: ~100s PB data; sustained: 30M ops/sec; 100+ GB/s I/O (gmail?) <a href="https://t.co/BbL8J2VNB4">https://t.co/BbL8J2VNB4</a></p>&mdash; Jimmy Lin (@lintool) <a href="https://twitter.com/lintool/statuses/380015731691106304">September 17, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Source: <a href="https://conf-slac.stanford.edu/xldb-2013/sites/conf-slac.stanford.edu.xldb-2013/files/JDean.pdf">Jeff Dean's talk slides at XLDB 2013</a> [<a href="data/2013-09-10-JeffDean.pdf">local copy</a>]</p>
+
 <h3 style="padding-top: 10px">Google's Disks (2013)</h3>
 
 <p>Estimate: Google has close to 10 exabytes of active storage
@@ -118,7 +150,7 @@ Press Release</a></p>
 
 <p>Around ~45k hadoop nodes, ~350 PB total</p>
 
-<img src="images/hadoopatyahoo.png"/>
+<img src="images/hadoopatyahoo.png" width="600px"/>
 
 <p>Source: <a href="http://developer.yahoo.com/blogs/ydn/posts/2013/02/hadoop-at-yahoo-more-than-ever-before/">YDN Blog</a></p>
 
@@ -177,6 +209,11 @@ a day. One hundred billion searches are conducted each month on Google
 </ul>
 
 <p>Source: <a href="http://hughewilliams.com/2012/06/26/the-size-scale-and-numbers-of-ebay-com/">Hugh Williams Blog Post</a></p>
+
+<h3 style="padding-top: 10px">Facebook at Hadoop Summit (June 2012)</h3>
+
+<blockquote class="twitter-tweet" lang="en"><p>HDFS growth at <a href="https://twitter.com/search?q=%23facebook&amp;src=hash">#facebook</a>. 100 PB in some clusters. 200 million files <a href="https://twitter.com/search?q=%23hadoopsummit&amp;src=hash">#hadoopsummit</a> <a href="http://t.co/qyaMaper">pic.twitter.com/qyaMaper</a></p>&mdash; chiradeep (@chiradeep) <a href="https://twitter.com/chiradeep/statuses/212972081921536000">June 13, 2012</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <h3 style="padding-top: 10px">Amazon S3 Cloud Storage Hosts 1 Trillion Objects (June 2012)</h3>
 
