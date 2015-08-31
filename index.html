@@ -316,6 +316,48 @@ which translates into 4.27 TB/min or 22.5 GB/min/node.</p>
 </p>
 
 <p><hr/></p>
+<h3 style="padding-top: 10px">How Google Backs Up The Internet (January 2014)</h3>
+
+<p>Talk <a href="https://www.youtube.com/watch?v=eNliOm9NtCM">How Google Backs Up the Internet</a>. Here's a <a href="http://highscalability.com/blog/2014/2/3/how-google-backs-up-the-internet-along-with-exabytes-of-othe.html">nice blog post</a> summarizing talk contents.</p>
+
+<p>Interesting tidbits:</p>
+
+<ul>
+
+  <li>GMail alone is approaching low exabytes of data.</li>
+
+  <li>A lot of the backup processes are coordinated by MapReduce.</li>
+
+  <li>Google deploys what amounts to be RAID4 on tape.</li>
+
+  <li>The GMail outage of 2011 is what compelled Google to reveal that it uses tapes for backup. Interesting that this talk was largely focused on tape, perhaps because of the GMail outage case study?</li>
+
+  <li>From a question: deduplication isn't always a win; sometimes faster to just keep multiple copies.</li>
+
+</ul>
+
+<p>Other (personal) observations:</p>
+
+<ul>
+
+<li>One of the questioners
+mentioned <a href="https://github.com/Netflix/SimianArmy">Chaos
+Monkey</a> and asked if Google did something like that. The speaker
+didn't seem to know what Chaos Monkey was, which is a bit surprising
+since that tool has gotten a fair bit a publicity in the
+community. This is completely anecdotal and speculative of course,
+but perhaps this speaks to the insular nature of Google's culture?</li>
+
+<li>One of the questioners didn't know what MapReduce was and asked
+about it. The speaker said "I don't actually know MapReduce all that
+well... I just use it." Then he started talking about semaphores and
+locking. While nothing he said was technically incorrect, it was a
+fairly inarticulate answer for a fairly straightforward
+question. Weird.</li>
+
+</ul>
+
+<p><hr/></p>
 <h3 style="padding-top: 10px">Google's BigTable (September 2013)</h3>
 
 <blockquote class="twitter-tweet" lang="en"><p>Jeff Dean at XLDB: Largest Google Bigtable cluster: ~100s PB data; sustained: 30M ops/sec; 100+ GB/s I/O (gmail?) <a href="https://t.co/BbL8J2VNB4">https://t.co/BbL8J2VNB4</a></p>&mdash; Jimmy Lin (@lintool) <a href="https://twitter.com/lintool/statuses/380015731691106304">September 17, 2013</a></blockquote>
