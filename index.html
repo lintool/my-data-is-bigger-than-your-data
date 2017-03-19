@@ -33,6 +33,33 @@
 <p>Without further adieu, here's "big" data, in reverse chronological order...</p>
 
 <p><hr/></p>
+<h3 style="padding-top: 10px">Twitter Infrastructure (January 2017)</h3>
+
+<p>Overview of Twitter's current infrastructure:</p>
+
+<img src="images/Twitter2017-infra-distribution.png"/>
+
+<p>Highlights:</p>
+
+<ul>
+
+<li>Hadoop: We have multiple clusters storing over 500 PB divided in four groups (real time, processing, data warehouse and cold storage). Our biggest cluster is over 10k nodes. We run 150k applications and launch 130M containers per day.</li>
+
+<li>Manhattan (the backend for Tweets, Direct Messages, Twitter accounts, and more): We run several clusters for different use cases such as large multi tenant, smaller for non common, read only, and read/write for heavy write/heavy read traffic patterns. The read/only cluster handles 10s of millions QPS whereas a read/write cluster handles millions of QPS. The highest performance cluster, our observability cluster, which ingests in every datacenter, handles over tens of million writes.</li>
+
+<li>Graph: Our legacy Gizzard/MySQL based sharded cluster for storing our graphs. Flock, our social graph, can manage peaks over tens of million QPS, averaging our MySQL servers to 30k - 45k QPS.</li>
+
+<li>Logging (Scribe, but transition over the Flume): We handle over a trillion messages per day and all of these are processed into over 500 categories, consolidated and then and selectively copied across all our clusters.</li>
+
+<li>Caching: We operate hundreds of clusters with an aggregate packet rate of 320M packets/s, delivering over 120GB/s to our clients. We logically partition our caches by users, Tweets, timelines, etc. and in general, every cache cluster is tuned for a particular need. Based on the type of the cluster, they handle between 10M to 50M QPS, and run between hundreds to thousands of instances.</li>
+
+<li>Haplo: Primary cache for Tweet timelines and is backed by a customized version of Redis (implementing the HybridList). Haplo is read-only from Timeline Service and written to by Timeline Service and Fanout Service. Aggregated commands between 40M to 100M per second. Aggregated service requests 800K per second.</li>
+
+</ul>
+
+<p>Source: <a href="https://blog.twitter.com/2017/the-infrastructure-behind-twitter-scale">The Infrastructure Behind Twitter</a>
+
+<p><hr/></p>
 <h3 style="padding-top: 10px">Internet Archive (January 2017)</h3>
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">532,461,462,000 URL&#39;s in the new Wayback index! go <a href="https://twitter.com/internetarchive">@internetarchive</a> (this includes all the images and such, so the page count is ~ 279B)</p>&mdash; Brewster Kahle (@brewster_kahle) <a href="https://twitter.com/brewster_kahle/status/816772509546598401">January 4, 2017</a></blockquote>
@@ -168,7 +195,9 @@ devices are voice searches.</p>
 <p><hr/></p>
 <h3 style="padding-top: 10px">Big data... blast from the past</h3>
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">email from 1996 <a href="http://t.co/e4l4GxiSJt">pic.twitter.com/e4l4GxiSJt</a></p>&mdash; Alice Maz (@alicemazzy) <a href="https://twitter.com/alicemazzy/status/655306196128280576">October 17, 2015</a></blockquote>
+<img src="tweets/655306196128280576.png">
+
+<!--blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">email from 1996 <a href="http://t.co/e4l4GxiSJt">pic.twitter.com/e4l4GxiSJt</a></p>&mdash; Alice Maz (@alicemazzy) <a href="https://twitter.com/alicemazzy/status/655306196128280576">October 17, 2015</a></blockquote-->
 
 <p><hr/></p>
 <h3 style="padding-top: 10px">Large Scale Distributed Deep Learning on Hadoop Clusters (September 2015)</h3>
@@ -191,6 +220,13 @@ talk <a href="https://www.youtube.com/watch?v=W71BTkUbdqE">here</a>.</p>
 <p><img src="images/2015-09-23-Google-source2.png"/></p>
 
 <p>Source: <a href="http://www.wired.com/2015/09/google-2-billion-lines-codeand-one-place/">Wired</a></p>
+
+<p><hr/></p>
+<h3 style="padding-top: 10px">Hadoop at Twitter (September 2015)</h3>
+
+<p>Our Hadoop filesystems host over 300PB of data on tens of thousands of servers. Blog post below further describes Twitter's federated, multi-DC Hadoop setup.</p>
+
+<p>Source: <a href="https://blog.twitter.com/2015/hadoop-filesystem-at-twitter">Hadoop filesystem at Twitter</a></p>
 
 <p><hr/></p>
 <h3 style="padding-top: 10px">HBase at Bloomberg (September 2015)</h3>
